@@ -4,11 +4,11 @@ spring:
     name: hello-service
 
 server:
-  port: 8082
+  port: 8201
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://localhost:8100/eureka/,http://localhost:8101/eureka/,http://localhost:8102/eureka/
